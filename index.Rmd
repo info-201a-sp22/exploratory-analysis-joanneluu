@@ -15,11 +15,11 @@ Winter 2022
 
 ### Abstract
 
-In this project, we will be working with basic data about dogs living in New York City in 2015. From this dataset, we hope to answer questions that will be beneficial to future dog owners and anybody interested in the name trends of pet dogs over time, as this will provide insight on information about dogs living in a densely populated area that some may find helpful. To do this, we will be coding with the programming language R in order to effectively analyze this data to answer our questions.
+Our main goal in this research is to find any possible relationships between the cost and type of housing available, and the type/breed of dog that an owner chooses to get. From this data set, we hope to answer questions that will be beneficial to future dog owners as this will provide insight about dogs living in a densely populated area that some may find helpful. This is important because there have been many situations where dogs are abandoned or given to a shelter because their former owner realized it did not have the time or resources to care for them.
 
 ### Keywords
 
-Dogs, New York, Name Trends, Housing Costs, Dog Breeds
+Dogs, Name Trends, Dog Names, New York
 
 ### Introduction  
 
