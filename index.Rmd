@@ -3,7 +3,7 @@ title: "Exporatory Analysis"
 output: html_document
 ---
 
-## The Dogs of New York
+## The Dog Name Trends of New York
 
 ### Authors
 
