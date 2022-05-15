@@ -96,6 +96,18 @@ Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
 
+```{r summary table, echo = FALSE, message = FALSE}
+library(knitr)
+source("summary-table.R")
+kable(table,
+      col.names = c("Total Number of Dogs",
+                    "Number of Dogs with Top 20 Name",
+                    "Percentage with Top 20 Name",
+                    "Number of Unique Names",
+                    "Number of Unknown Names",
+                    "Number"))
+```
+
 ### Chart 1
 
 We try to find the top 20 popular dog name in NYC. By comparing the number of the top 20 names in the whole population, we can find how the top 20 names have a big weight in all names. With the effective information in the data, there are 14323 different names in total. We named the other 14303 names as "other" for more convenient comparing. From our bar chart, we can see that the number of the top 20 names are even greater than the number of other names. The number of top 5 names even take up more than 25%. Hope this will be helpful for the owner who wanted to give their dog an unique name.
