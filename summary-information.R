@@ -42,6 +42,3 @@ borough_most_unique_names <- dog_data %>% group_by(Borough) %>%
   filter(number_of_names == max(number_of_names)) %>% 
   pull(Borough)
 summary_info$borough_most_unique_names <- borough_most_unique_names
-
-
-  
