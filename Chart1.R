@@ -2,9 +2,6 @@ library(ggplot2)
 library(dplyr)
 dog_data <- read.csv("https://raw.githubusercontent.com/dennywu84/Final-Project/main/dog-data.csv", stringsAsFactors = F )
 
-dog_data <- dog_data %>% 
-  filter(BreedName != "Unknown")
-
 breed_n <- dog_data %>%
   group_by(BreedName) %>%
   summarize(n = n()) %>% 
@@ -28,7 +25,7 @@ data <- data.frame(Name, n, pct)
 ggplot(data, aes(x = "", y = n, fill = Name)) +
   geom_col() +
   coord_polar("y") +
-  geom_text(aes(label = pct, x = 1.1), position = position_stack(vjust = 0.5), size = 3.5) +
+  geom_text(aes(label = pct, x = 1.0), position = position_stack(vjust = 0.5), size = 4) +
   theme_void() + 
   labs(title = "Comparing the Percentage of the Number of Top 20 Name") +
   scale_fill_discrete(name = "Group", 
