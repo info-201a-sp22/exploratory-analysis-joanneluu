@@ -22,10 +22,18 @@ table_data$percent_in_top_20 <- percent(percent_in_top_20, .01)
 number_unique_names <- dog_data %>% distinct(AnimalName)
 table_data$number_unique_names <- nrow(number_unique_names)
 
-table <- table(table_data)
-#table <- prop.table(table)
-#table
-#names(table) <- ("Total Number of Dogs")
+number_of_unknown_names <- dog_data %>% group_by(AnimalName) %>% 
+  summarise(n = n()) 
+unknown <- number_of_unknown_names[number_of_unknown_names$AnimalName == "UNKNOWN", ]
+unknown <- unknown %>% filter(n == max(n, na.rm = TRUE)) %>% 
+  pull(n)
+not_given <- number_of_unknown_names[number_of_unknown_names$AnimalName == "NAME NOT PROVIDED", ]
+not_given <- not_given %>% filter(n == max(n, na.rm = TRUE)) %>% 
+  pull(n)
+table_data$number_of_unknown_names <- unknown + not_given
+
+table <- table(data.frame(table_data))
+table
 
 #data <- matrix(data = NA, nrow = 1, ncol = 4, byrow = F)
 #colnames(data) <- ('Total Number of Dogs', 'Number of Unique Names', 'Number of Dogs with a Top 20 Name', 'Percent of Dogs With a Top 20 Name')

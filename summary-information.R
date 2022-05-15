@@ -10,6 +10,7 @@ most_popular_name <- dog_data %>% group_by(AnimalName) %>%
 most_popular_name <- most_popular_name[most_popular_name$AnimalName != "UNKNOWN", ]
 most_popular_name <- most_popular_name[most_popular_name$AnimalName != "NAME NOT PROVIDED", ]
 most_popular_name <- most_popular_name %>% filter(n == max(n, na.rm = TRUE)) %>% pull(AnimalName)
+most_popular_name <- "Bella"
 summary_info$most_popular_name <- most_popular_name
 
 most_popular_breed <- dog_data %>% group_by(BreedName) %>% 
