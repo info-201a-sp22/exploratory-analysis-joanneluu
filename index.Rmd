@@ -91,7 +91,33 @@ Describe why you chose this chart and what information it reveals
 Here's an example of how to run an R script inside an RMarkdown file:
 
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+dog_data <- dog_data %>% 
+  filter(BreedName != "Unknown")
+
+breed_n <- dog_data %>%
+  group_by(BreedName) %>%
+  summarize(n = n()) %>% 
+  filter(BreedName != "Unknown") %>% 
+  top_n(20)
+
+top_5 <- 3853 + 4200 + 5528 + 6659 + 6978
+top_5to10 <- 3195 + 2763 + 2525 + 2093 + 1970
+top_10to15 <- 1897 + 1774 + 1759 + 1751 + 1718
+top_15to20 <- 1480 + 1315 + 1289 + 1267 + 1242
+other <- nrow(dog_data) - sum(breed_n$n)
+
+Name <- c("top_5", "top_5to10", "top_10to15", "top_15to20", "other")
+n <- c(top_5, top_5to10, top_10to15, top_15to20, other)
+
+data <- data.frame(Name, n)
+
+ggplot(data, aes(x = "", y = n, fill = Name)) +
+  geom_bar(stat="identity", width=1, color="white") +
+  coord_polar("y", start=0) +
+  theme_void() +
+  labs(title = "Comparing the percentage of the number of top 20 name")
 ```
+We try to find the top 20 popular dog name in NYC. By comparing the number of the top 20 names in the whole population, we can find how the top 20 names have a big weight in all names. With the effective information in the data, there are 14323 different names in total. We named the other 14303 names as "other" for more convenient comparing. From our bar chart, we can see that the number of the top 20 names are even greater than the number of other names. The number of top 5 names even take up more than 25%. Hope this will be helpful for the owner who wanted to give their dog an unique name.
 
 ### Chart 2
 
