@@ -14,7 +14,7 @@ summary_info$most_popular_name <- most_popular_name %>% filter(n == max(n, na.rm
 most_popular_breed <- dog_data %>% group_by(BreedName) %>% 
   summarise(n = n())
 most_popular_breed <- most_popular_breed[most_popular_breed$BreedName != "Unknown", ]
-summary_info$most_popular_breed <- most_popular_breed %>% filter(n == max(n, na.rm = TRUE)) %>% 
+summary_info$most_popular_breed <- most_popular_breed %>% filter(n == max(n, na.rm = TRUE)) %>%
   pull(BreedName)
 
 proportion_top_20 <- dog_data %>% group_by(BreedName) %>% 
