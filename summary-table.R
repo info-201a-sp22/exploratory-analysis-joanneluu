@@ -34,6 +34,3 @@ table_data$number_of_unknown_names <- unknown + not_given
 
 table <- table(data.frame(table_data))
 table
-
-#data <- matrix(data = NA, nrow = 1, ncol = 4, byrow = F)
-#colnames(data) <- ('Total Number of Dogs', 'Number of Unique Names', 'Number of Dogs with a Top 20 Name', 'Percent of Dogs With a Top 20 Name')
