@@ -23,22 +23,22 @@ Dogs, Name Trends, Dog Names, New York
 
 ### Introduction  
 
-With a population of more than 8.4 million in 2015, New York is an extremely large and diverse city, and houses dogs of many ages and breeds in all five boroughs. The city is extremely dense population-wise, and has resulted in a high cost of living. Yet despite this, people are still able to accommodate their pets into their living situation. By analyzing a dataset about dogs located in New York, we will be able to find valuable insights about the most common dog breeds living there, and be able to think critically about why that is the case.
+With a population of over 8.4 million in 2015, New York is an extremely large and diverse city, and houses dogs of many ages and breeds in all five of its boroughs. The city is extremely dense population-wise, and this has resulted in a high cost of living. Yet despite this, New Yorkers are still able to accommodate their pets into their living situation. By analyzing a data set about dogs located in New York, we will be able to find valuable insights about the most common dog breeds living there, and think critically about why that is the case.
 
-The research questions we are aiming to answer using our dataset are:
-- How does the cost of housing and type of housing available (house, apartment, etc.) in each borough affect the size of dogs that owners choose to get?
-- Does the dog breed affect the name that is chosen for the dog, or are most of the names consistent throughout all the dog breeds?
+The research questions we are aiming to answer using our data set are:  
+- How does the cost of housing and type of housing available (house, apartment, etc.) in each borough affect the size of dogs that owners choose to get?  
+- Just how popular are the most popular dog names?  
 - Was there a trend in any of the years where many people gave their dogs unconventional/unpopular names?
 
-The answers to these questions may be valuable for future dog owners (especially in dense cities like New York), as they may be interested in what type of dogs are best suited for their housing situation. This is important because there are various factors that go into caring for a dog, and choosing a dog that doesn’t fit your lifestyle or home situation may result in neglect of the dog. And on a more lighthearted note, these data would give these same people inspiration for potential dog names, and they are able to look at the name trends that have taken place throughout the years.
+The answers to these questions may be valuable for future dog owners (especially in dense cities like New York), as they may be interested in what type of dogs are best suited for their housing situation. This is important because there are various factors that go into caring for a dog, and choosing a dog that doesn’t fit your lifestyle or housing situation may result in neglect of the dog. And on a more lighthearted note, the data would give these same people inspiration for potential dog names, and they are also able to look at the name trends that have taken place throughout the years.
 
 ### Related Work  
 
-In a city where the population is so dense, finding affordable housing is difficult, especially for dog owners. In [this article](https://www.nytimes.com/2013/03/31/realestate/what-pet-owners-must-do-to-get-new-york-apartments.html) by the New York Times, stories were obtained from dog owners that went through the struggle of finding a home for themselves and their dog (Rosenblum). They asked about the types of dogs they had, the pricing of their apartment, and the process of finding the right apartment for their dog. They often had to settle for rentals that were further away, smaller, and more expensive. One person mentions how the age of her dog also prevented her from buying many apartments due to the amount of stairs.  
+In a city where the population is so dense, finding affordable housing is difficult, especially for dog owners. In [this article](https://www.nytimes.com/2013/03/31/realestate/what-pet-owners-must-do-to-get-new-york-apartments.html) by *The New York Times*, stories were obtained from dog owners that went through the struggle of finding a home for themselves and their dog (Rosenblum). They asked about the types of dogs they had, the pricing of their apartment, and the process of finding the right home for their dog. The owners often had to settle for rentals that were further away, smaller, and more expensive in order to accommodate their pet. One person mentions how the age of her dog also prevented her from buying many apartments due to the amount of stairs.  
 
-In [this article](https://www.nytimes.com/2013/04/04/garden/the-art-of-naming-a-dog.html), the New York Times talks about what goes on in naming a dog (Hoffman). There are general rules that most experts recommend. For example, they recommend avoiding names that could sound like a command as it could confuse the dog.  
+In [this article](https://www.nytimes.com/2013/04/04/garden/the-art-of-naming-a-dog.html), *The New York Times* discusses what goes on in naming a dog (Hoffman). There are general rules that most experts recommend. For example, they recommend avoiding names that could sound like a command, as this could confuse the dog.  
 
-[This paper](https://www.mdpi.com/2076-2615/4/3/409/htm) by Emily Weiss and others talks about how bigger dogs in New York and Washington D.C. are surrendered more often than smaller dogs (Weiss, et al.). They surveyed people at animal shelters that were giving up dogs and asked them twenty-six questions in an attempt to find a common reason behind why people gave up their large dogs. They found that the majority of New York respondents were living in apartments while most respondents in D.C. were living in single family homes. However, when they were asked for additional reasons for giving up the dog, only 14% of New York respondents listed housing issues.
+[This paper](https://www.mdpi.com/2076-2615/4/3/409/htm) by Emily Weiss and others talks about how bigger dogs in New York and Washington D.C. are surrendered more often than smaller dogs (Weiss, et al.). They surveyed owners at animal shelters that were giving up dogs and asked them twenty-six questions in an attempt to find a common reason behind why people gave them up. They found that the majority of New York respondents were living in apartments while most respondents in D.C. were living in single family homes. However, when they were asked for additional reasons for giving up the dog, only 14% of New York respondents listed housing issues.
 
 #### References  
 Hoffman, Jan. “You Named Me Brutus? Really?” *The New York Times*, 3 Apr. 2013, https://www.nytimes.com/2013/04/04/garden/the-art-of-naming-a-dog.html.
@@ -49,19 +49,19 @@ Weiss, Emily, et al. “Large Dog Relinquishment to Two Municipal Facilities in 
 
 ### The Dataset
 
-The data were originally discovered through a visualization named “Dog Names in New York City”, and was found on the NYC government website. The csv file for the dataset that corresponds to the visualization was found in [this GitHub repository](https://github.com/Kaz-A/dog_names/).
+The data set was originally discovered through the visualization “Dog Names in New York City”, and was found on the NYC government website. The csv file for the data set that corresponds to this visualization was found in [this GitHub repository](https://github.com/Kaz-A/dog_names/).
 
 The data were collected by the NYC Department of Health, and it was based on results from 2015.
 
-It is not clear what methods the author used when collecting data. But we can infer that the data were collected through questionnaires.
+It is not clear what methods were used to collect the data, but we can infer that the data were collected through questionnaires.
 
-With the increased number of pet dogs, people are interested in the names of dogs. We think that the names may have some trends which can reflect culture or background changes. To illustrate, in some areas, there may be more dogs with one particular name than in other areas. To answer this question, we want to analyze the data of dogs’ names and what information these data could give. The purpose of collecting these data is to analyze the change and popularity in dog names.
+With the increased number of pet dogs, people are interested in potential names for them. It is possible that the names may indicate naming trends that reflect cultural or background changes. To illustrate, in some areas, there may be more dogs with one particular name than in other areas. To answer this question, we want to analyze the data of dogs’ names and what information these data could give. The purpose of collecting these data is to analyze the change and popularity in dog names.
 
 There are 111,650 observations in total.
 
 There are 5 features in the data, which are AnimalName, AnimalGender, AgeAsOf2015, BreedName, and Borough.
 
-There are some possible limitations within our data. The data were collected in 2015. With 8 years passed, the popular names that owners want to give to their dogs may change. Because of this, this dataset may not be representative of the dog name trends in 2023. Additionally, it is possible that not every dog owner in New York was counted in the data, and therefore it may not be entirely accurate.
+There are some possible limitations within our data. The data were collected in 2015, which was roughly 7 years ago as the time of writing. Trends change over time, so the popular names that owners want to give to their dogs may change as well. Because of this, this data set may not be representative of the dog name trends today. Additionally, it is possible that not every dog owner in New York was counted in the data, and therefore it may not be entirely accurate.
 
 ### Implications
 
