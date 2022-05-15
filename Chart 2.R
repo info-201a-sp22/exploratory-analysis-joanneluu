@@ -76,6 +76,6 @@ total$AgeAsOf2015 <- as.numeric(as.character(total$AgeAsOf2015))
 ggplot(data = total) +
   geom_line(aes(x = AgeAsOf2015, y = n, color = Name)) +
   facet_wrap(~Name) + 
-  labs( title = "The Relationship Between Dogs Names and Their Ages",
+  labs( title = "The Relationship Between Dog Names and Their Ages",
       x = "Ages",
-      y = "Dogs Names")
+      y = "Number of Dogs")

@@ -25,14 +25,12 @@ brooklyn <- dog_data %>%
   top_n(5) %>% 
   mutate(Borough = paste("BRooklyn"))
 
-
 manhattan <- dog_data %>% 
   filter(Borough == "Manhattan" | Borough == "MANHATTAN") %>% 
   group_by(BreedName) %>% 
   summarize(n = n()) %>% 
   top_n(5) %>% 
   mutate(Borough = paste("Manhattan"))
-
 
 queens <- dog_data %>% 
   filter(Borough == "Queens" | Borough == "QUEENS") %>% 
@@ -81,7 +79,7 @@ ggplot(data = staten_island) +
   facet_wrap(~Borough) +
   labs( title = "Top 5 Dog Breeds in Staten Island",
         x = "Dog Breeds",
-        y = "Dog Number")
+        y = "Number of Dogs")
 
 
 
