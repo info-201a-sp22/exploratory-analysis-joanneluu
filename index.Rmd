@@ -90,23 +90,25 @@ And we also found that the borough with the largest number of unique dogs names 
 
 ### Table
 
-Describe why you included the table and what information it reveals
+This table shows us the percentage of dogs that had one of the top 20 most popular names. With a total number of 111,650 dogs in the data set, and 55,256 of those dogs having one of the 20 names, this means that 49.49% have one of these names. The number of total unique dog names were 16,222, which means that roughly 0.1% of names (20 names) make up almost half of the number of dogs.  
+
+It is also important to note the number of unknown names. There were 5,269 entries in the data set that did not input a name, which marked the dog's name as "Unknown". These entries may make the data inaccurate, as it's likely that some of these dogs with "Unknown" names actually have a top 20 most popular name, which would increase the percentage of dogs that have a top 20 name.
 
 ```{r summary table, echo = FALSE, message = FALSE}
 library(knitr)
 source("summary-table.R")
 kable(table,
       col.names = c("Total Number of Dogs",
-                    "Number of Dogs with Top 20 Name",
-                    "Percentage with Top 20 Name",
-                    "Number of Unique Names",
-                    "Number of Unknown Names",
+                    "Number of Dogs with a Top 20 Name",
+                    "Percentage of Dogs with a Top 20 Name",
+                    "Total Number of Unique Names",
+                    "Total Number of Unknown Names",
                     "Number"))
 ```
 
 ### Chart 1
 
-We wanted to visually represent just how popular the top 20 most popular names are. We discovered that there were 14323 names total, and we grouped the 14303 names that weren't the first 20 into one big group named "Other". We used a pie chart to visualize this data because it is easy to see the size differences between all of the various sections of the pie. The four sections that make up the top 20 names is almost exactly half of the pie, meaning these top 20 names are extremely popular. This may be helpful to future dog owners who are looking to give their dog a unique name, as there are many to choose from.
+We wanted to visually represent just how popular the top 20 most popular names are. We discovered that there were 16,222 names total, and we grouped the 16,202 names that weren't the first 20 into one big group named "Other". We used a pie chart to visualize this data because it is easy to see the size differences between all of the various sections of the pie. The four sections that make up the top 20 names is almost exactly half of the pie, meaning these top 20 names are extremely popular. This may be helpful to future dog owners who are looking to give their dog a unique name, as there are many to choose from.
 
 ```{r, echo = FALSE, message = FALSE, code = readLines("Chart1.R")}
 ```
