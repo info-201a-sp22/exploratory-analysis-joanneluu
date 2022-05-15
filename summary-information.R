@@ -1,4 +1,5 @@
 library("dplyr")
+library("scales")
 
 dog_data <- read.csv("https://raw.githubusercontent.com/dennywu84/Final-Project/main/dog-data.csv", stringsAsFactors = F )
 
