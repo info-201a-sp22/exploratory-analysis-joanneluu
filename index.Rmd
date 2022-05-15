@@ -11,7 +11,7 @@ Annie Yuan, Yimin Tang, Denny Wu, Joanne Lu
 
 ### Date
 
-Winter 2022
+Spring 2022
 
 ### Abstract
 
@@ -74,8 +74,6 @@ The features of the data set only include the animal name, gender, and age in 20
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
 ```{r summary info, echo = FALSE, message = FALSE}
 source("summary-information.R")
 ```
@@ -91,8 +89,6 @@ We also wanted to take a look at whether or not there was a correlation between 
 And we also found that the borough with the largest number of unique dogs names was also `r borough_most_unique_names`, so in this situation, the borough with the largest number of dogs was also the same borough with the highest number of different names.
 
 ### Table
-
-Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
 
