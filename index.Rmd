@@ -76,6 +76,10 @@ The features of the data set only include the animal name, gender, and age in 20
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
+```{r summary info, echo = FALSE, message = FALSE}
+source("summary-information.R")
+```
+
 ### Table
 
 Include a table of aggregate information
@@ -86,10 +90,19 @@ Describe why you included the table and what information it reveals
 
 We try to find the top 20 popular dog name in NYC. By comparing the number of the top 20 names in the whole population, we can find how the top 20 names have a big weight in all names. With the effective information in the data, there are 14323 different names in total. We named the other 14303 names as "other" for more convenient comparing. From our bar chart, we can see that the number of the top 20 names are even greater than the number of other names. The number of top 5 names even take up more than 25%. Hope this will be helpful for the owner who wanted to give their dog an unique name.
 
+```{r, echo = FALSE, message = FALSE, code = readLines("Chart1.R")}
+```
+
 ### Chart 2
 
 We want to see the trends for the dogs names, so we try to do a line plot to show the number of dogs with one name and their ages. In Chart 2, we can see that the trends for top 10 names are similar. They all show a decreasing trend, which implies that these names were mostly used between 2013 to 2015, but before 2010, these names were not as popular as now.
 
+```{r, echo = FALSE, message = FALSE, code = readLines("Chart 2.R")}
+```
+
 ### Chart 3
 
 For Chart 3, we want to see the relationship between the housing prices and the size of top 5 popular dogs. As we know, the rank of housing prices in New York is 1. Manhattan, 2. Brooklyn, 3. Queens, 4. Staten Island, 5. Bronx. In Manhattan, the most popular dog was Yorkshire Terrier, a small dog. These might imply that the high price of housing caused people in Manhattan perfer small size dogs, because they did not need to many spaces. But for Brooklyn, there were 2 large dogs in top 5. We can see that the top 5 dogs in these boroughs were actually simillar, most of them were small dogs. So maybe the husing price do not influence the preference for dogs owners when they choose dogs.
+
+```{r, echo = FALSE, message = FALSE, code = readLines("Chart 3.R")}
+```
