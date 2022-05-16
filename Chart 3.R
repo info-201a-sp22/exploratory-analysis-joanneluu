@@ -51,28 +51,28 @@ ggplot(data = bronx) +
   facet_wrap(~Borough) +
   labs( title = "Top 5 Dog Breeds in Bronx",
         x = "Dog Breeds",
-        y = "Dog Number")
+        y = "Number of Dogs")
 
 ggplot(data = brooklyn) +
   geom_col(aes(x = BreedName, y = n, color = BreedName, fill = BreedName)) +
   facet_wrap(~Borough) +
   labs( title = "Top 5 Dog Breeds in Brooklyn",
         x = "Dog Breeds",
-        y = "Dog Number")
+        y = "Number of Dogs")
 
 ggplot(data = manhattan) +
   geom_col(aes(x = BreedName, y = n, color = BreedName, fill = BreedName)) +
   facet_wrap(~Borough) +
   labs( title = "Top 5 Dog Breeds in Manhattan",
         x = "Dog Breeds",
-        y = "Dog Number")
+        y = "Number of Dogs")
 
 ggplot(data = queens) +
   geom_col(aes(x = BreedName, y = n, color = BreedName, fill = BreedName)) +
   facet_wrap(~Borough) +
   labs( title = "Top 5 Dog Breeds in Queens",
         x = "Dog Breeds",
-        y = "Dog Number")
+        y = "Number of Dogs")
 
 ggplot(data = staten_island) +
   geom_col(aes(x = BreedName, y = n, color = BreedName, fill = BreedName)) +
