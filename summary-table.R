@@ -32,5 +32,4 @@ not_given <- not_given %>% filter(n == max(n, na.rm = TRUE)) %>%
   pull(n)
 table_data$number_of_unknown_names <- unknown + not_given
 
-table <- table(data.frame(table_data))
-table
+info_table <- data.frame(table_data)
