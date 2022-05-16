@@ -1,5 +1,5 @@
 ---
-title: "Exporatory Analysis"
+title: "Exploratory Analysis"
 output: html_document
 ---
 
@@ -78,21 +78,21 @@ The features of the data set only include the animal name, gender, and age in 20
 source("summary-information.R")
 ```
 
-We found that the most popular dog name across the board in New York is *`r most_popular_name`*, which can be assumed that this is a name mainly given to female dogs.  
+We found that the most popular dog name across the board in New York is **`r most_popular_name`**, which can be assumed that this is a name mainly given to female dogs.  
 
-The most popular dog breed is *`r most_popular_breed`*. This is a small dog breed, so it's possible that New Yorkers gravitate more towards smaller breeds, possibly due to their housing situation or other factors.  
+The most popular dog breed is **`r most_popular_breed`**. This is a small dog breed, so it's possible that New Yorkers gravitate more towards smaller breeds, possibly due to their housing situation or other factors.  
 
-We wanted to know what percentage of dogs had one of the top 20 most popular dog names, to see just how common these popular dog names are. We discovered that *`r proportion_top_20`* of all the dogs located in New York had one of these top 20 names.  
+We wanted to know what percentage of dogs had one of the top 20 most popular dog names, to see just how common these popular dog names are. We discovered that **`r proportion_top_20`** of all the dogs located in New York had one of these top 20 names.  
 
-We also wanted to take a look at whether or not there was a correlation between the quantity of dogs in a borough and the quantity of unique dog names. We found that the borough with the largest number of dogs in 2015 was *`r borough_largest_population`*.  
+We also wanted to take a look at whether or not there was a correlation between the quantity of dogs in a borough and the quantity of unique dog names. We found that the borough with the largest number of dogs in 2015 was **`r borough_largest_population`**.  
 
-And we also found that the borough with the largest number of unique dog names was also *`r borough_most_unique_names`*, so in this situation, the borough with the largest number of dogs was also the same borough with the highest number of different names.
+And we also found that the borough with the largest number of unique dog names was also **`r borough_most_unique_names`**, so in this situation, the borough with the largest number of dogs was also the same borough with the highest number of different names.
 
 ### Table
 
-This table shows us the percentage of dogs that had one of the top 20 most popular names. With a total number of *111,650* dogs in the data set, and *55,256* of those dogs having one of the 20 names, this means that *49.49%* have one of these names. The number of total unique dog names were *16,222*, which means that roughly 0.1% of names (20 names) make up almost half of the number of dogs.  
+This table shows us the percentage of dogs that had one of the top 20 most popular names. With a total number of **111,650** dogs in the data set, and **55,256** of those dogs having one of the 20 names, this means that **49.49%** have one of these names. The number of total unique dog names were **16,222**, which means that roughly 0.1% of names (20 names) make up almost half of the number of dogs.  
 
-It is also important to note the number of unknown names. There were *5,269* entries in the data set that did not input a name, which marked the dog's name as "Unknown". These entries may make the data inaccurate, as it's likely that some of these dogs with "Unknown" names actually have a top 20 most popular name, which would increase the percentage from 49.49%.
+It is also important to note the number of unknown names. There were **5,269** entries in the data set that did not input a name, which marked the dog's name as "Unknown". These entries may make the data inaccurate, as it's likely that some of these dogs with "Unknown" names actually have a top 20 most popular name, which would increase the percentage from 49.49%.
 
 ```{r summary table, echo = FALSE, message = FALSE}
 library(knitr)
